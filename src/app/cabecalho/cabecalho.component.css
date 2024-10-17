@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #167E15;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1440px;
+    height: 122px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+span{
+    font: 500 50px "Bebas Neue", sans-serif;
+}
+
+li{
+    font: 300 20px "Roboto", sans-serif;
+    margin-left: 20px; 
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.item1{
+    display: flex;
+    align-items: center
+}
+
+img{
+    max-width: 128px;
+    height: 128px;
+}
+
+.item2{
+    display: flex;
+    align-items: center
+}
+
+#cadastrar{
+    font: 300 20px "Roboto", sans-serif;
+    background-color: #167E15;
+    color: white;
+
+    margin-left: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#cadastrar:hover{
+    background-color: #0f530e;
+}
+li:hover{
+    color: #0056b3;
+}
+
+#espace{
+    max-width: 1440px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.item3{
+    display: flex;
+    align-items: baseline;
+
+}
