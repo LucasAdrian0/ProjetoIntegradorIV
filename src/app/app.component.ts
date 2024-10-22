@@ -5,6 +5,7 @@ import { CadastroParceirosComponent } from "./cadastro-parceiros/cadastro-parcei
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { LoginComponent } from './login/login.component';
     RodapeComponent,
     CadastroUsuarioComponent,
     CadastroParceirosComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
