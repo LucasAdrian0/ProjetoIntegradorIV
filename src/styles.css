@@ -1,49 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     border: 0;
-    
-}
-/* FORM */
-form {
-    width: 450px;
-    margin: 0 auto; 
-    display: flex;
-    flex-direction: column;
-}
-
-*{
-    border: 0;
-    margin: 0;
-    padding: 0;
-
     box-sizing: border-box;
 }
 
-:root {
-    --color-primary: #167E15;
-}
-
-.container{
-    max-width: 1440px;
-    margin: 0 auto 50px auto;
-
+/* FORM */
+form {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
     display: flex;
+    justify-content: center;
+    align-items: left;
+    max-height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    
 }
 
-h1{
-    font: 400 45px "Montserrat", sans-serif;
-    margin-bottom: 50px;
+.containerForm {
+    flex-direction: column;
+    justify-content: column ;
+    background-color: #fff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    max-width: 80rem;
+    width: 100%; 
+    align-items: column;  
 }
 
-p{
-    font: 100 30px "Montserrat", sans-serif;
-    margin-bottom: 50px;
-
-    color: #424242;
+form label {
+    font: 300 20px "Montserrat", sans-serif;
+    margin-top: 50px;
+    color: #666    
 }
-#buttom{
+
+form input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+}
+input[type="submit"] {
+    background-color: #167e15;
+    color: white;
+    border: none;
+    margin-top: 50px;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#buttom {
     font: 500 30px "Montserrat", sans-serif;
     padding: 20px;
     border-radius: 8px;
@@ -51,6 +70,34 @@ p{
     color: white;
 }
 
-#buttom:hover{
+input[type="submit"]:hover,
+#buttom:hover {
     background-color: #0f530e;
 }
+
+:root {
+    --color-primary: #167E15;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto 50px auto;
+    display: flex;
+}
+
+h1 {
+    font: 400 45px "Montserrat", sans-serif;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font: 100 30px "Montserrat", sans-serif;
+    margin-bottom: 50px;
+    color: #424242;
+}
+

@@ -18,8 +18,8 @@
     display: flex;
     justify-content: space-between;
 
-    max-width: 1440px;
-    height: 122px;
+    max-width: auto;
+    height: auto;
     margin: 0 auto;
     padding-top: 20px;
 }
@@ -76,8 +76,8 @@ li:hover{
 }
 
 #espace{
-    max-width: 1440px;
-    height: 50px;
+    max-width: auto;
+    height: auto;
     margin: 0 auto;
 }
 

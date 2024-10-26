@@ -1,47 +1,29 @@
-<h2>Cadastro de Usuário</h2>
-<h2>Dados Pessoais</h2>
-<form (ngSubmit)="submit()" [formGroup]="formulario" #formDir="ngForm">
-    <section>
-        <label for="NomeUsuario">Nome Completo:</label><br>
-        <input type="text" id="NomeUsuario" name="NomeUsuario" placeholder="Digite seu nome Completo"
-            formControlName="NomeUsuario"><br><br>
-        <div *NgIf="NomeUsuario.invalid && formDir.submitted" class="valida-erro" required>
-            <p> *NgIf="NomeUsuario.errors?.['required']">O Campo é obrigatório</p>
-        </div>
-        
+<form id="cadastro-form">
+    <div class="containerForm">
+        <h2>Cadastro de Usuário</h2><br>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
 
-        <label for="CPF">CPF:</label><br>
-        <input type="number" id="CPF" name="CPF" placeholder="Digite seu CPF" required><br><br>
-        <div *NgIf="CPF.invalid && formDir.submitted" class="valida-erro" required>
-            <p> *NgIf="CPF.errors?.['required']">O Campo é obrigatório</p>
-        </div>
+        <label for="senha">CPF:</label>
+        <input type="cpf" id="cpf" name="cpf" required><br><br>
 
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
 
-        <label for="DataNascimento">Data de Nascimento:</label><br>
-        <input type="date" id="DataNascimento" name="DataNascimento" ><br><br>
+        <label for="telefone">Telefone (opcional):</label>
+        <input type="tel" id="telefone" name="telefone"><br><br>
 
-        <label for="Telefone">Telefone (opcional):</label><br>
-        <input type="tel" id="Telefone" name="Telefone" placeholder="Digite seu telefone"><br><br>
+        <label for="data-nascimento">Data de Nascimento (opcional):</label>
+        <input type="date" id="data-nascimento" name="data-nascimento"><br><br>
 
+        <h2>Cadastrar Senha</h2><br>
 
-        <label for="Email">E-mail:</label><br>
-        <input type="email" id="Email" name="Email" placeholder="Digite seu email" ><br><br>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required><br><br>
 
-        <label for="Endereco">Endereço (opcional):</label><br>
-        <input type="text" id="Endereco" name="Endereco"><br><br>
+        <label for="senha">Confirmar Senha</label>
+        <input type="password" id="confirmaSenha" name="confirmaSenha" required><br><br>
 
-    </section>
-
-    <h2>Cadastrar Login</h2>
-
-    <section>
-        <label for="Login">Nome de Login:</label><br>
-        <input type="text" id="Login" name="Login" placeholder="Digite seu nome de Login" ><br><br>
-
-        <label for="Senha">Senha:</label><br>
-        <input type="password" id="Senha" name="Senha" placeholder="Digite sua senha"><br><br>
-
-    </section>
-
-    <input type="submit" value="Cadastrar">
+        <input type="submit" value="Cadastrar">
+    </div>
 </form>
